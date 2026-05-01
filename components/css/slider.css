@@ -1,0 +1,40 @@
+/* Hero Slider Component Styles */
+.tarjeta_slider {
+    position: relative;
+    height: 70vh;
+    padding: 0;
+}
+
+.slider-bg {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.text-slider {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.text-slider .splide__track,
+.text-slider .splide__list,
+.text-slider .splide__slide {
+    height: 100%;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content {
+    background: var(--color-navbar);
+}
+
+.slide-content img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

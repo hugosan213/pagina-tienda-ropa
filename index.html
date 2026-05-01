@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanZone Streetwear</title>
+    <link rel="icon" href="./assets/logo.jpg" type="image/jpg">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    
+    <!-- CSS Componentes -->
+    <link rel="stylesheet" href="/components/css/variables.css">
+    <link rel="stylesheet" href="/components/css/navbar.css">
+    <link rel="stylesheet" href="/components/css/cart.css">
+    <link rel="stylesheet" href="/components/css/slider.css">
+    <link rel="stylesheet" href="/components/css/cards.css">
+    <link rel="stylesheet" href="/components/css/anuncios.css">
+    <link rel="stylesheet" href="/components/css/footer.css">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    
+    <!-- Splide Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+</head>
+<body>
+    <main>
+
+        <!-- NAVBAR (cargado dinámicamente) -->
+        <header id="navbar-container" data-src="/components/html/navbar.html"></header>
+        <div id="cart-container" data-src="/components/html/cart-panel.html"></div>
+        <!-- HERO SLIDER -->
+        <section class="tarjeta_slider" id="sliderr">
+            <div class="slider-bg"></div>
+            <div id="main-slider" class="splide text-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="slide-content">
+                                <img src="./assets/fotos_slides/casaclan.jpeg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="slide-content">
+                                <img src="./assets/fotos_slides/whitetrash.jpeg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="slide-content">
+                                <img src="./assets/fotos_slides/billabong.jpeg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarjetas_home">
+            <a href="/hombre.html" class="card_link">
+            <div class="cards_index">
+                    <img src="./assets/fotos_productos/camisa_hombre.jpg">
+                    <h3>Hombre</h3>
+                    <p>Camisas/Remeras</p>
+            </div>
+            </a>
+            <a href="/mujer.html" class="card_link">
+            <div class="cards_index">
+                    <img src="./assets/fotos_productos/canguro_dama.jpg">
+                    <h3>Mujer</h3>
+                    <p>Camisas/Remeras</p>
+            </div>
+            </a>
+            <a href="/calzado_accesorios.html" class="card_link">
+            <div class="cards_index">
+                    <img src="./assets/fotos_productos/zapatilla2.jpg">
+                    <h3>Calzados y Accesorios</h3>
+                    <p>Zapatillas/Gorras/Mochilas</p>
+            </div>
+            </a>
+            <a href="/ofertas.html" class="card_link">
+            <div class="cards_index">
+                    <img src="./assets/fotos_productos/gorra3.jpg">
+                    <h3>Sale</h3>
+                    <p>Ofertas/Descuentos</p>
+            </div>
+            </a>
+        </section>
+
+        <div class="anuncios">
+            <h1> 6 Cuotas Sin interes</h1>
+            <p>en compras superiores a $100.000</p>
+            <h2>Regalo Especial por tu compra Online</h2>
+            <p>hace tu encargo y comunicate con nosotros</p>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Urbanzone.esq - 9 de julio 1040 - 9 de julio 1026 - Esquel, Chubut. Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Scripts externos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+    
+    <!-- Módulos JS -->
+    <script src="/components/js/navbar.js"></script>
+    <script src="/components/js/cart.js"></script>
+    <script src="/components/js/slider.js"></script>
+    <script src="/components/js/cards.js"></script>
+    <script src="/components/js/loader.js"></script>
+
+</body>
+</html>

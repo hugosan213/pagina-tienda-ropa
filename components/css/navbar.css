@@ -1,0 +1,110 @@
+/* Navbar Component Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 95px;
+    z-index: 1000;
+    display: flex;
+    background: var(--color-primary);
+}
+
+.filas_navbar {
+    position: relative; 
+    max-width: 1200px;
+    width: 100%;
+    padding:10px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spacer {
+    position: fixed;
+    top: 95px;
+    width: 100%;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.nombre_marca {
+    color: var(--color-letras);
+    white-space: nowrap;
+    font: 45px var(--font-principal);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--color-letras);
+    text-decoration: none;
+    font: bold 16px var(--font-secundaria);
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.links-contacto {
+    position: absolute;
+    right: 80px;
+    display: flex;
+    gap: 10px;
+}
+
+.cart {
+    width: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn_whatsapp, .btn_instagram {
+    display: inline-block;
+    text-decoration: none; /* saca subrayado */
+}
+
+.btn_whatsapp img, .btn_instagram img{
+    display: block; /* evita espacios raros */
+    width: 30px; /* o el tamaño que quieras */
+    height: auto;
+}
+
+.cart {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart span {
+    background: red;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Scroll state */
+.navbar.scrolled + .spacer {
+    height: 60px;
+    background: rgba(24, 24, 24, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.navbar.scrolled .filas_navbar {
+    padding: 5px 20px;
+}
+
+.navbar,
+.logo,
+.filas_navbar {
+    transition: all 0.3s ease;
+}

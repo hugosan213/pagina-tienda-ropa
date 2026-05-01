@@ -1,0 +1,38 @@
+.anuncios {
+    width: 100%;
+    height: 600px;
+    background: url("../../assets/fondo_urbano.jpeg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.anuncios h1 {
+    color: var(--color-anuncios);
+    font: 120px var(--font-principal);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.anuncios p {
+    color: var(--color-letras);
+    font: 22px var(--font-secundaria);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0);
+
+}
+
+.anuncios h2 {
+    color: var(--color-anuncios);
+    font: 50px var(--font-principal);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+
+}
+
+.card_link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}

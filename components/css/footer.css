@@ -1,0 +1,9 @@
+/* Footer Component Styles */
+footer {
+    background: var(--color-primary);
+    color: var(--color-letras);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
